@@ -13,6 +13,7 @@ Restaurant.destroy_all
   name: Faker::Restaurant.name,
   address: Faker::Address.city,
   phone_number: Faker::PhoneNumber.phone_number,
-  category: ["chinese", "italian", "japanese", "french", "belgian"].sample
+  category: ["chinese", "italian", "japanese", "french", "belgian"].sample,
+  rating: rand(0..5)
   )
 end
